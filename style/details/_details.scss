@@ -18,6 +18,13 @@
 
   }
 
+  &-dropdown-menu {
+    min-width: 80px;
+    height: 38px;
+    border: 1px solid $colorText;
+    background-color: $backBlock;
+    list-style-type: none;
+  }
 }
 
 .summary {
@@ -25,6 +32,16 @@
   &-header {
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding-inline: 8px;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    list-style-type: none;
+  }
+
+  &-dropdown-menu {
+    display: flex;
     align-items: center;
     padding-inline: 8px;
     box-sizing: border-box;

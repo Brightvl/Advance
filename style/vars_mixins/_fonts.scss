@@ -2,7 +2,8 @@ body {
   font-family: Lato, sans-serif;
 }
 
-@mixin customFont($size: false, $fh: false, $fw: false, $ls: false) {
+@mixin customFont(
+  $size: false, $fh: false, $fw: false, $ls: false) {
   @if $size {
     font-size: $size;
   }
