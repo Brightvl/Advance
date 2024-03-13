@@ -1,0 +1,19 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  &__text {
+    font-size: 27px;
+    line-height: 32px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    color: #3e3e40;
+
+  }
+
+  &_select-color {
+    color: $selectColor;
+  }
+}

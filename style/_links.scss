@@ -1,0 +1,15 @@
+a {
+  text-decoration: none;
+  color: $colorText;
+}
+
+
+.link-svg {
+  &_hover:hover use {
+    fill: $selectColor;
+  }
+
+  &_hover:hover g path {
+    fill: $selectColor;
+  }
+}

@@ -1,0 +1,35 @@
+.details {
+  &-header {
+    width: 130px;
+    height: 38px;
+    border: 1px solid $colorText;
+    background-color: $selectColor;
+
+    &__text {
+      color: $alternateColorText;
+      text-decoration: none;
+      @include customFont(15px, 0, 400);
+    }
+
+    &:hover {
+      box-shadow: 0 0 3px $colorText;
+      cursor: pointer;
+    }
+
+  }
+
+}
+
+.summary {
+
+  &-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 8px;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    list-style-type: none;
+  }
+}

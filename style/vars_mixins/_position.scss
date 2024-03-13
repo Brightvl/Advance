@@ -1,0 +1,15 @@
+@mixin customFlex($direction: false, $justify-content: false, $align-items: false, $flex-wrap: false) {
+  display: flex;
+  @if $direction {
+    flex-direction: $direction;
+  }
+  @if $justify-content {
+    justify-content: $justify-content;
+  }
+  @if $align-items {
+    align-items: $align-items;
+  }
+  @if $flex-wrap {
+    flex-wrap: $flex-wrap;
+  }
+}

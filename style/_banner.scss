@@ -3,7 +3,8 @@
 
 
   &__index {
-    @include centerFlex;
+    display: flex;
+    align-items: center;
     justify-content: start;
 
     background-color: #e8e8e8;

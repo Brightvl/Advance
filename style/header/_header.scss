@@ -1,19 +1,18 @@
 
 .header {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.17);
-  border: 1px solid $baseBorder;
   background-color: $baseBackgroundColor;
+  z-index: 20;
+  position: sticky;
+  top: 0;
 
   &_flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include customFlex(row, space-between, center);
     height: 100px;
   }
 
   &__item {
-    display: flex;
-    align-items: center;
+    @include customFlex(0, 0, center);
 
     &_position {
       gap: 20px;
@@ -21,48 +20,12 @@
   }
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 5px;
 
-  &__text {
-    font-size: 27px;
-    line-height: 32px;
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 0.025em;
-    color: #3e3e40;
-
-  }
-
-  &_select-color {
-    color: $selectColor;
-  }
-}
 
 .header-form {
   display: flex;
 }
 
-.button-site {
-  background-color: #f16d7f;
-  padding: 12px 19px;
-  border: 1px solid transparent;
-
-  &:hover {
-    background-color: #fff;
-    color: #f16d7f;
-    border: 1px solid #f16d7f;
-  }
-
-  &__text {
-    color: #ffffff;
-    font-size: 15px;
-    font-weight: 400;
-    text-decoration: none;
-  }
-}
 
 //region menu
 .navigation {
@@ -74,6 +37,7 @@
   display: flex;
   list-style-type: none; //убирает toggle маркер
   justify-content: center;
+
 
   &__item {
     position: relative;
@@ -105,9 +69,7 @@
 
   &__link:hover {
     border-bottom: 1px solid $selectColor;
-    color: $selectColor;
   }
-
 
 }
 

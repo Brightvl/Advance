@@ -1,0 +1,18 @@
+body {
+  font-family: Lato, sans-serif;
+}
+
+@mixin customFont($size: false, $fh: false, $fw: false, $ls: false) {
+  @if $size {
+    font-size: $size;
+  }
+  @if $fh {
+    line-height: $fh;
+  }
+  @if $fw {
+    font-weight: $fw;
+  }
+  @if $ls {
+    letter-spacing: $ls;
+  }
+}

@@ -1,10 +1,12 @@
-@import "vars/colors";
-@import "vars/sizes";
-@import "fonts";
-@import "mixins";
+@import "vars_mixins/colors";
+@import "vars_mixins/sizes";
+@import "vars_mixins/fonts";
+@import "vars_mixins/position";
 
-@import "header";
+@import "header/header";
 @import "footer";
+
+@import "header/logo";
 
 @import "banner";
 @import "carousel";
@@ -14,23 +16,23 @@
 @import "cart";
 @import "offer";
 
-
+@import "links";
+@import "details/details";
 
 * {
   margin: 0;
   padding: 0;
 }
 
-a {
-  text-decoration: none;
-  color: $colorText;
-}
 
 
 .container {
   width: $widthSite;
   margin: 0 auto;
 }
+
+
+
 
 
 

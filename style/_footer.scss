@@ -1,6 +1,7 @@
-//region footer
+.footer {
+z-index: 20;
+}
 
-/*region subscribe*/
 .subscribe {
   gap: 10vw;
   display: flex;
@@ -235,9 +236,4 @@
     color: #7a7a7a;
   }
 
-  &__link:hover g path {
-    fill: $selectColor;
-  }
 }
-
-//endregion
