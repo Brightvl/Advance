@@ -16,3 +16,35 @@ body {
     letter-spacing: $ls;
   }
 }
+
+.txt {
+  &_p {
+    @include customFont(13px, 20px, 400);
+    color: #b3b2b2;
+    padding-bottom: 34px;
+  }
+
+  &_h3 {
+    @include customFont(13px, 1.2, 600);
+    text-transform: uppercase;
+    color: $colorText;
+    padding-bottom: 13px;
+  }
+
+  &_h4 {
+    @include customFont(12px, 20px, 600);
+    color: $colorText;
+    padding-bottom: 16px;
+
+    span {
+      @include customFont(18px, 20px, 400);
+      color: #ff0d0d;
+    }
+  }
+
+  &_error {
+    @include customFont(13px, 20px, 600);
+    color: #ff0d0d;
+    padding-bottom: 29px;
+  }
+}

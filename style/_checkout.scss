@@ -1,206 +1,102 @@
 .checkout {
   background-color: $baseBackgroundColor;
 
-  &-item {
+  &-details {
     border-bottom: 1px solid $baseBorder;
 
+    &__box {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 35px 79px 35px;
+    }
+
+    &__item {
+
+    }
   }
 
+  &-summary {
+    display: flex;
+    padding-block: 30px;
+    @include customFont(16px, 1.2, 800, 0.025rem);
+    text-transform: uppercase;
+    color: $colorText;
+  }
+}
 
-  details {
-    border-bottom: 1px solid $baseBorder;
+.login-end {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
 
-    summary {
-      display: flex;
-      padding-block: 30px;
-      @include customFont(16px, 1.2, 800, 0.025rem);
-      text-transform: uppercase;
-      color: $colorText;
+  a {
+    @include customFont(14px, 20px, 600);
+    color: $colorText;
+    text-decoration: none;
+  }
+
+}
+
+.toggle {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 33px;
+  gap: 20px;
+
+  &-box {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    input[name='contact'] {
+      accent-color: #555555;
     }
+  }
 
-    .details-content {
-      display: flex;
-      padding-left: 35px;
-      padding-bottom: 79px;
+  label {
+    @include customFont(12px, 1.2, 600);
+    text-transform: uppercase;
+    color: $colorText;
+  }
+}
 
-      .guest-register {
-        width: 50vw;
-      }
-    }
+.link-box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-bottom: 38px;
 
+  a {
+    @include customFont(13px, 20px, 400);
+    color: #b3b2b2;
+    text-decoration: none;
 
-    .register_p {
-      @include customFont(13px, 20px, 400);
-      color: #b3b2b2;
-      padding-bottom: 34px;
-    }
-
-    .register_h3 {
-      @include customFont(13px, 1.2, 600);
-      text-transform: uppercase;
-      color: $colorText;
-      padding-bottom: 13px;
-    }
-
-    .radio {
-      display: flex;
-      flex-direction: column;
-      padding-bottom: 33px;
-      gap: 20px;
-
-      &-box {
-        display: flex;
-        align-items: center;
-        gap: 14px;
-
-        input[name='contact'] {
-          accent-color: #555555;
-        }
-      }
-
-      label {
-        @include customFont(12px, 1.2, 600);
-        text-transform: uppercase;
-        color: $colorText;
-      }
-    }
-
-    .link-box {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      padding-bottom: 38px;
-
-      a {
-        @include customFont(13px, 20px, 400);
-        color: #b3b2b2;
-        text-decoration: none;
-
-        .double-arrow {
-          width: 12px;
-          line-height: 20px;
-          filter: brightness(0) saturate(100%) invert(75%) sepia(4%) saturate(3%) hue-rotate(323deg) brightness(99%) contrast(82%);
-        }
-      }
-    }
-
-    .button-register {
-      @include customFlex(0, center, center);
-      width: 180px;
-      height: 50px;
-      background-color: $baseBackgroundColor;
-      border: 1px solid $baseBackgroundColor;
-      @include customFont(14px, 1.2, 800);
-      text-transform: uppercase;
-      color: $colorText;
-
-      &:hover {
-        box-shadow: 0 0 5px 0 $selectColor;
-        cursor: pointer;
-        background-color: $baseBackgroundColor;
-        color: $colorText;
-      }
-    }
-
-    .lorem {
-      @include customFont(13px, 20px, 400);
-      color: #b3b2b2;
-      padding-bottom: 30px;
-      padding-inline: 35px;
-    }
-
-    .register_h4 {
-      @include customFont(12px, 20px, 600);
-      color: $colorText;
-      padding-bottom: 16px;
-
-      span {
-        @include customFont(18px, 20px, 400);
-        color: #ff0d0d;
-      }
-    }
-
-    .error-text {
-      @include customFont(13px, 20px, 600);
-      color: #ff0d0d;
-      padding-bottom: 29px;
-    }
-
-    .login-end {
-      height: 50px;
-      display: flex;
-      align-items: center;
-      gap: 32px;
-
-      a {
-        @include customFont(14px, 20px, 600);
-        color: $colorText;
-        text-decoration: none;
-      }
+    .double-arrow {
+      width: 12px;
+      line-height: 20px;
+      filter: brightness(0) saturate(100%) invert(75%) sepia(4%) saturate(3%) hue-rotate(323deg) brightness(99%) contrast(82%);
     }
   }
 }
 
-:-moz-any(#password, #email) {
-  width: 390px;
-  height: 45px;
+.button-register {
+  @include customFlex(0, center, center);
+  width: 180px;
+  height: 50px;
   background-color: $baseBackgroundColor;
-  border: 1px solid $colorText;
-  margin-bottom: 20px;
-  padding-left: 15px;
+  border: 1px solid $baseBackgroundColor;
+  @include customFont(14px, 1.2, 800);
+  text-transform: uppercase;
+  color: $colorText;
 
-  &:focus {
-    outline: none;
-    box-shadow: 0px 0px 3px $colorText;
-    border: 1px solid $colorText;
-    border-radius: 0;
+  &:hover {
+    box-shadow: 0 0 5px 0 $selectColor;
+    cursor: pointer;
+    background-color: $baseBackgroundColor;
+    color: $colorText;
   }
+
 }
 
-:-webkit-any(#password, #email) {
-  width: 390px;
-  height: 45px;
-  background-color: $baseBackgroundColor;
-  border: 1px solid $colorText;
-  margin-bottom: 20px;
-  padding-left: 15px;
 
-  &:focus {
-    outline: none;
-    box-shadow: 0px 0px 3px $colorText;
-    border: 1px solid $colorText;
-    border-radius: 0;
-  }
-}
-
-:matches(#password, #email) {
-  width: 390px;
-  height: 45px;
-  background-color: $baseBackgroundColor;
-  border: 1px solid $colorText;
-  margin-bottom: 20px;
-  padding-left: 15px;
-
-  &:focus {
-    outline: none;
-    box-shadow: 0px 0px 3px $colorText;
-    border: 1px solid $colorText;
-    border-radius: 0;
-  }
-}
-
-:is(#password, #email) {
-  width: 390px;
-  height: 45px;
-  background-color: $baseBackgroundColor;
-  border: 1px solid $colorText;
-  margin-bottom: 20px;
-  padding-left: 15px;
-
-  &:focus {
-    outline: none;
-    box-shadow: 0px 0px 3px $colorText;
-    border: 1px solid $colorText;
-    border-radius: 0;
-  }
-}
