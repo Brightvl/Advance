@@ -1,0 +1,46 @@
+@import "vars/colors";
+@import "vars/sizes";
+@import "fonts";
+@import "mixins";
+
+@import "header";
+@import "footer";
+
+@import "banner";
+@import "carousel";
+@import "catalog";
+@import "checkout";
+@import "privileges";
+@import "cart";
+@import "offer";
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $colorText;
+}
+
+
+.container {
+  width: $widthSite;
+  margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
