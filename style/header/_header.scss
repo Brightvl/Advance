@@ -1,9 +1,13 @@
 .header {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.17);
-  background-color: $baseBackgroundColor;
   z-index: 20;
   position: sticky;
   top: 0;
+
+}
+
+.header-box {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.17);
+  background-color: $backgroundColor-1;
 
   &_flex {
     @include customFlex(row, space-between, center);
@@ -22,7 +26,6 @@
 
 .header-form {
   display: flex;
-
 }
 
 
@@ -125,9 +128,8 @@
   &__link:hover {
     color: $selectColor;
   }
-
-
 }
+
 
 //endregion
 

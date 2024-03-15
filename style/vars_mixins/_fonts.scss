@@ -3,7 +3,7 @@ body {
 }
 
 @mixin customFont(
-  $size: false, $fh: false, $fw: false, $ls: false) {
+  $size: false, $fh: false, $fw: false, $ls: false, $color: false) {
   @if $size {
     font-size: $size;
   }
@@ -15,6 +15,9 @@ body {
   }
   @if $ls {
     letter-spacing: $ls;
+  }
+  @if $color {
+    color: $color;
   }
 }
 

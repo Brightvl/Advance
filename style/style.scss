@@ -17,17 +17,33 @@
 @import "offer";
 
 @import "links";
-@import "details/details";
+@import "details/dropdown";
+
+//responsive
+//@import "adaptive/index_responsive";
 
 * {
   margin: 0;
   padding: 0;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
+.content {
+  flex: 1;
+}
+
+.siteWidth {
+  max-width: $widthSite;
+  margin: 0 auto;
+}
 
 .container {
-  width: $widthSite;
+  max-width: $widthContainer;
   margin: 0 auto;
 }
 

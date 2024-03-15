@@ -1,4 +1,3 @@
-//region catalog
 
 .catalog {
 
@@ -78,19 +77,11 @@
 
 
   &__header {
-    font-size: 16px;
-    font-weight: 700;
-    color: #222222;
-    margin-bottom: 17px;
+    @include customFont(16px, 54px, 700, 0.025rem, $colorText-1);
   }
 
   &__description {
-    font-size: 13px;
-    line-height: 1.2;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: #222222;
-    margin-bottom: 17px;
+    @include customFont(14px, 54px, 400, 0.025rem, $colorText-2);
   }
 
 }
@@ -98,8 +89,6 @@
 .catalog-filter {
   display: flex;
   justify-content: space-between;
-
-
   color: #6f6e6e;
 
   &__flex {
@@ -180,11 +169,8 @@
   }
 
   &__price {
-    font-size: 16px;
-    line-height: 1.2;
-    font-weight: 700;
+    @include customFont(16px, 1.2, 700, 0.025rem, $selectColor);
     text-transform: uppercase;
-    color: #f16d7f;
   }
 }
 
@@ -230,5 +216,3 @@
   border: 1px solid $selectColor;
   cursor: pointer;
 }
-
-//endregion

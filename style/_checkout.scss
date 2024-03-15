@@ -1,5 +1,5 @@
 .checkout {
-  background-color: $baseBackgroundColor;
+  background-color: $backgroundColor-1;
 
   &-details {
     border-bottom: 1px solid $baseBorder;
@@ -84,8 +84,8 @@
   @include customFlex(0, center, center);
   width: 180px;
   height: 50px;
-  background-color: $baseBackgroundColor;
-  border: 1px solid $baseBackgroundColor;
+  background-color: $backgroundColor-1;
+  border: 1px solid $backgroundColor-1;
   @include customFont(14px, 1.2, 800);
   text-transform: uppercase;
   color: $colorText;
@@ -93,7 +93,7 @@
   &:hover {
     box-shadow: 0 0 5px 0 $selectColor;
     cursor: pointer;
-    background-color: $baseBackgroundColor;
+    background-color: $backgroundColor-1;
     color: $colorText;
   }
 

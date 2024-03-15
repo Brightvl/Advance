@@ -1,9 +1,11 @@
 .details {
+  cursor: pointer;
   &-header {
     width: 130px;
     height: 38px;
     border: 1px solid $colorText;
     background-color: $selectColor;
+    list-style-type: none;
 
     &__text {
       color: $alternateColorText;
@@ -13,17 +15,42 @@
 
     &:hover {
       box-shadow: 0 0 3px $colorText;
-      cursor: pointer;
     }
 
   }
 
   &-dropdown-menu {
-    min-width: 80px;
+    width: 80px;
     height: 38px;
     border: 1px solid $colorText;
-    background-color: $backBlock;
-    list-style-type: none;
+    background-color: $backgroundColor-2;
+
+
+    &__nav {
+
+    }
+
+    &__ul {
+      width: 262px;
+      list-style-type: none;
+      background-color: $backgroundColor-1;
+      position: relative;
+      top: 5px;
+      z-index: 1;
+
+
+    }
+
+    &__li {
+      list-style-type: none;
+      &:hover .details-dropdown-menu__link {
+        color: $selectColor;
+      }
+    }
+
+    &__link {
+      display: block;
+    }
   }
 }
 
