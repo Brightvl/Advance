@@ -2,86 +2,7 @@
   z-index: 20;
 }
 
-.subscribe {
-  gap: 10vw;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 438px;
-  padding-inline: 10%;
 
-  background-image: url("../../img/subscribe/background.svg"), linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
-  background-blend-mode: soft-light;
-  background-size: cover;
-  background-position: left;
-
-  text-align: center;
-
-  color: rgb(34, 34, 36);
-
-  font-weight: 400;
-
-  .recall {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
-    width: 30vw;
-    gap: 20px;
-
-    font-style: italic;
-    font-size: 20px;
-    line-height: 23px;
-
-    &-img {
-      max-width: 5vw;
-      border-radius: 50%;
-    }
-  }
-
-  .subscribe_panel {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    font-size: 18px;
-
-    .subscribe-header {
-      font-weight: 700;
-      font-size: 24px;
-    }
-
-    .subscribe__text {
-      margin: 20px;
-    }
-
-    .subscribe__button {
-      display: flex;
-      justify-content: space-between;
-      padding: 10px;
-
-      .input-button {
-        padding: 10px;
-        border: none;
-        border-radius: 20px 0 0 20px;
-        background: rgb(225, 225, 225);
-      }
-
-      button {
-        padding: 10px 20px;
-        border: none;
-        border-radius: 0 20px 20px 0;
-        background: $selectColor;
-        color: white;
-        cursor: pointer;
-
-      }
-    }
-
-
-  }
-}
 
 
 .footer-block {
@@ -98,7 +19,6 @@
 }
 
 .info-map {
-
   &__text {
     margin-top: 20px;
     font-size: 14px;
@@ -106,7 +26,7 @@
     font-weight: 300;
     letter-spacing: 0.025em;
     color: #898989;
-    width: 500px;
+    width: 50%;
   }
 }
 
@@ -155,4 +75,24 @@
     color: #7a7a7a;
   }
 
+}
+
+@media screen and (max-width: 768px) {
+  .footer-block {
+    flex-direction: column;
+    align-items: center;
+
+    gap: 20px;
+  }
+
+  .info-map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    &__text {
+      width: 100%;
+    }
+  }
 }

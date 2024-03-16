@@ -4,10 +4,11 @@
 @import "vars_mixins/position";
 
 @import "header/header";
-@import "footer/footer";
-
 @import "header/logo";
 @import "header/breadcrumbs";
+
+@import "footer/footer";
+@import "footer/subscribe";
 
 @import "banner";
 @import "carousel";
@@ -20,8 +21,7 @@
 @import "links";
 @import "details/dropdown";
 
-//responsive
-//@import "adaptive/index_responsive";
+
 
 * {
   margin: 0;

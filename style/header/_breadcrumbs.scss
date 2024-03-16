@@ -8,6 +8,7 @@
     justify-content: space-between;
     align-items: center;
     height: 148px;
+    padding-inline: 20px;
   }
 
   &__heading {
@@ -50,5 +51,16 @@
     font-size: 14px;
     line-height: 17px;
     color: #636363;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .breadcrumbs {
+
+    background-color: $backgroundColor-3;
+
+    &-flex {
+      height: 10vh;
+    }
   }
 }

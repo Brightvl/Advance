@@ -1,16 +1,24 @@
 
 .catalog {
 
+  &-sticky {
+    position: sticky;
+    top: 200px;
+  }
+
   &__product {
     display: flex;
+    justify-content: center;
     gap: 20px;
+    position: relative;
   }
 }
 
 //region details
 
 .catalog-details {
-  width: 250px;
+
+  width: 10vw;
   margin-block: 20px;
 
   &[open] &__summary {
@@ -89,12 +97,12 @@
 .catalog-filter {
   display: flex;
   justify-content: space-between;
-  color: #6f6e6e;
+  color: $colorText-3;
 
   &__flex {
     display: flex;
     flex-wrap: wrap;
-    width: 150px;
+    max-width: 150px;
     gap: 10px;
   }
 
@@ -119,8 +127,6 @@
 }
 
 .catalog-box {
-  display: grid;
-
   &__single-page {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -129,12 +135,14 @@
 
   &__index {
     display: grid;
+    justify-content: center;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
   }
 
   &__product {
     display: grid;
+    justify-content: center;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
@@ -144,6 +152,7 @@
   width: 263px;
   position: relative;
   margin-bottom: 40px;
+  justify-self: center;
 
   &__link {
     width: 263px;
@@ -207,12 +216,47 @@
   }
 }
 
-.catalog-button {
-  place-self: center;
-  grid-column: 1/5;
-  width: 212px;
-  height: 42px;
-  background-color: transparent;
-  border: 1px solid $selectColor;
-  cursor: pointer;
+.button-box {
+  display: flex;
+  justify-content: center;
+
+  &__item {
+    place-self: center;
+    width: 212px;
+    height: 42px;
+    border: 1px solid $selectColor;
+    cursor: pointer;
+    background-color: transparent;
+    color: $selectColor;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .catalog-box {
+    &__product {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .catalog-details {
+    width: 150px;
+  }
+
+}
+
+
+@media screen and (max-width: 768px) {
+  .catalog-box {
+    &__single-page {
+
+    }
+
+    &__index {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__product {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
 }
