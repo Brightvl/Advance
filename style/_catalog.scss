@@ -239,6 +239,10 @@
       grid-template-columns: repeat(3, 1fr);
     }
 
+    &__index {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
     &__product {
       grid-template-columns: repeat(2, 1fr);
     }
@@ -262,7 +266,44 @@
     }
 
     &__product {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+
+  }
+  .catalog__product {
+    margin: 20px;
+  }
+  .catalog-navigation {
+    display: none;
+  }
+  .catalog-filter {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 560px) {
+
+  .catalog {
+    &-sticky {
+      top: 10px;
+    }
+  }
+
+
+  .catalog-box {
+
+    &__single-page {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    &__index {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    &__product {
       grid-template-columns: repeat(1, 1fr);
     }
   }
+
 }

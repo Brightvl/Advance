@@ -99,4 +99,19 @@
 
 }
 
+@media screen and (max-width: 560px) {
+  .checkout {
+    background-color: $backgroundColor-1;
 
+    &-details {
+      padding-inline: 20px;
+
+      &__box {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+    }
+  }
+}

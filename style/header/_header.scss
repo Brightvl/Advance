@@ -150,10 +150,22 @@
     }
   }
 
-.menu{
-  &__link {
-    padding-inline: 2vw;
+  .menu {
+    &__link {
+      padding-inline: 2vw;
+    }
   }
+
 }
 
+@media screen and (max-width: 560px) {
+  .header-box {
+    .header-form {
+      display: none;
+    }
+  }
+
+  .navigation {
+    display: none;
+  }
 }

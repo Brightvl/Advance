@@ -3,8 +3,6 @@
 }
 
 
-
-
 .footer-block {
   display: flex;
   justify-content: space-between;
@@ -95,5 +93,11 @@
     &__text {
       width: 100%;
     }
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .footer-navigation {
+display: none;
   }
 }

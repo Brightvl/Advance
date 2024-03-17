@@ -13,3 +13,13 @@
     color: $selectColor;
   }
 }
+
+@media screen and (max-width: 560px) {
+
+  .logo {
+    &__text {
+      display: none;
+    }
+  }
+
+}
